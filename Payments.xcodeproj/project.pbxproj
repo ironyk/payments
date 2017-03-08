@@ -18,6 +18,14 @@
 		953E9C2E1E6FFE4B00EA2234 /* PayButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953E9C271E6FFE4B00EA2234 /* PayButtonView.swift */; };
 		953E9C2F1E6FFE4B00EA2234 /* SumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953E9C281E6FFE4B00EA2234 /* SumView.swift */; };
 		953E9C301E6FFE4B00EA2234 /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953E9C2A1E6FFE4B00EA2234 /* TriangleView.swift */; };
+		953E9C341E7002B600EA2234 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953E9C331E7002B600EA2234 /* Provider.swift */; };
+		953E9C361E7002C200EA2234 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953E9C351E7002C200EA2234 /* Field.swift */; };
+		953E9C381E7002C700EA2234 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953E9C371E7002C700EA2234 /* Account.swift */; };
+		953E9C3A1E7002CD00EA2234 /* MoneyAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953E9C391E7002CD00EA2234 /* MoneyAmount.swift */; };
+		953E9C3C1E7002D400EA2234 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953E9C3B1E7002D400EA2234 /* Currency.swift */; };
+		953E9C3F1E70043900EA2234 /* ProviderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953E9C3E1E70043900EA2234 /* ProviderService.swift */; };
+		953E9C411E70046C00EA2234 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953E9C401E70046C00EA2234 /* AccountService.swift */; };
+		953E9C431E7006D800EA2234 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953E9C421E7006D800EA2234 /* ServiceLocator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +42,14 @@
 		953E9C271E6FFE4B00EA2234 /* PayButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayButtonView.swift; sourceTree = "<group>"; };
 		953E9C281E6FFE4B00EA2234 /* SumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SumView.swift; sourceTree = "<group>"; };
 		953E9C2A1E6FFE4B00EA2234 /* TriangleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
+		953E9C331E7002B600EA2234 /* Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		953E9C351E7002C200EA2234 /* Field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
+		953E9C371E7002C700EA2234 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		953E9C391E7002CD00EA2234 /* MoneyAmount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyAmount.swift; sourceTree = "<group>"; };
+		953E9C3B1E7002D400EA2234 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		953E9C3E1E70043900EA2234 /* ProviderService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderService.swift; sourceTree = "<group>"; };
+		953E9C401E70046C00EA2234 /* AccountService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
+		953E9C421E7006D800EA2234 /* ServiceLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +84,8 @@
 			children = (
 				953E9C041E6FF2BE00EA2234 /* Main.storyboard */,
 				953E9C121E6FF31C00EA2234 /* PayViewController.swift */,
+				953E9C3D1E70042700EA2234 /* Services */,
+				953E9C321E7002A200EA2234 /* Models */,
 				953E9C231E6FFE4B00EA2234 /* Components */,
 				953E9C291E6FFE4B00EA2234 /* Views */,
 				953E9C311E6FFE6000EA2234 /* Resources */,
@@ -104,6 +122,28 @@
 				953E9C0C1E6FF2BE00EA2234 /* Info.plist */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		953E9C321E7002A200EA2234 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				953E9C331E7002B600EA2234 /* Provider.swift */,
+				953E9C351E7002C200EA2234 /* Field.swift */,
+				953E9C371E7002C700EA2234 /* Account.swift */,
+				953E9C391E7002CD00EA2234 /* MoneyAmount.swift */,
+				953E9C3B1E7002D400EA2234 /* Currency.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		953E9C3D1E70042700EA2234 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				953E9C421E7006D800EA2234 /* ServiceLocator.swift */,
+				953E9C3E1E70043900EA2234 /* ProviderService.swift */,
+				953E9C401E70046C00EA2234 /* AccountService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,10 +219,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				953E9C3A1E7002CD00EA2234 /* MoneyAmount.swift in Sources */,
+				953E9C361E7002C200EA2234 /* Field.swift in Sources */,
+				953E9C381E7002C700EA2234 /* Account.swift in Sources */,
+				953E9C411E70046C00EA2234 /* AccountService.swift in Sources */,
+				953E9C431E7006D800EA2234 /* ServiceLocator.swift in Sources */,
 				953E9C2D1E6FFE4B00EA2234 /* HeaderView.swift in Sources */,
 				953E9C131E6FF31C00EA2234 /* PayViewController.swift in Sources */,
 				953E9C2C1E6FFE4B00EA2234 /* FieldsView.swift in Sources */,
+				953E9C3F1E70043900EA2234 /* ProviderService.swift in Sources */,
 				953E9C2E1E6FFE4B00EA2234 /* PayButtonView.swift in Sources */,
+				953E9C341E7002B600EA2234 /* Provider.swift in Sources */,
+				953E9C3C1E7002D400EA2234 /* Currency.swift in Sources */,
 				953E9C2F1E6FFE4B00EA2234 /* SumView.swift in Sources */,
 				953E9C011E6FF2BE00EA2234 /* AppDelegate.swift in Sources */,
 				953E9C301E6FFE4B00EA2234 /* TriangleView.swift in Sources */,

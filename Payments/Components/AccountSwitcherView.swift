@@ -10,4 +10,8 @@ import UIKit
 
 class AccountSwitcherView: UIView {
   
+  func setup(with accounts: [Account]) {
+    
+  }
+  
 }

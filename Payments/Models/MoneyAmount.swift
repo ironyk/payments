@@ -1,17 +1,14 @@
 //
-//  FieldsView.swift
+//  MoneyAmount.swift
 //  Payments
 //
 //  Created by Nikolay Sidiropulo on 08/03/2017.
 //  Copyright © 2017 A|A. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class FieldsView: UIView {
-
-  func setup(with fields: [Field]) {
-    
-  }
-
+struct MoneyAmount {
+  let value: Decimal
+  let currency: Currency
 }

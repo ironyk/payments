@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bJj-Zn-pDc">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="bJj-Zn-pDc">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YfL-L8-EOo">
@@ -134,6 +134,11 @@
                                                     <constraint firstAttribute="bottom" secondItem="KJW-RG-VzR" secondAttribute="bottom" id="lLs-NF-q9X"/>
                                                     <constraint firstItem="TpL-nJ-fZx" firstAttribute="leading" secondItem="KJW-RG-VzR" secondAttribute="trailing" constant="15" id="o64-3E-joJ"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outlet property="imageView" destination="KJW-RG-VzR" id="kEt-co-bBF"/>
+                                                    <outlet property="subtitleLabel" destination="ZsW-zI-7yK" id="0bB-4Y-Oqu"/>
+                                                    <outlet property="titleLabel" destination="rL6-Di-L31" id="aXh-B3-svP"/>
+                                                </connections>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yku-lN-Tcx" customClass="FieldsView" customModule="Payments" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="217" width="375" height="64"/>
@@ -266,6 +271,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Оплата" id="Jfq-dV-NkN"/>
+                    <connections>
+                        <outlet property="accountSwitcherView" destination="fBS-e9-yW8" id="rvK-Wf-wbJ"/>
+                        <outlet property="fieldsView" destination="yku-lN-Tcx" id="zHN-0I-GJM"/>
+                        <outlet property="headerView" destination="NLw-wC-hgT" id="KTL-Ty-2aD"/>
+                        <outlet property="payButtonView" destination="mrh-cN-6vg" id="IYV-AH-tRJ"/>
+                        <outlet property="sumView" destination="4a3-x7-Lbr" id="Ujc-TP-EOz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
