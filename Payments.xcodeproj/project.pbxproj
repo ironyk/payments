@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		953E9C011E6FF2BE00EA2234 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953E9C001E6FF2BE00EA2234 /* AppDelegate.swift */; };
-		953E9C031E6FF2BE00EA2234 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953E9C021E6FF2BE00EA2234 /* ViewController.swift */; };
 		953E9C061E6FF2BE00EA2234 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 953E9C041E6FF2BE00EA2234 /* Main.storyboard */; };
 		953E9C081E6FF2BE00EA2234 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953E9C071E6FF2BE00EA2234 /* Assets.xcassets */; };
 		953E9C0B1E6FF2BE00EA2234 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 953E9C091E6FF2BE00EA2234 /* LaunchScreen.storyboard */; };
+		953E9C131E6FF31C00EA2234 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953E9C121E6FF31C00EA2234 /* PayViewController.swift */; };
+		953E9C2B1E6FFE4B00EA2234 /* AccountSwitcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953E9C241E6FFE4B00EA2234 /* AccountSwitcherView.swift */; };
+		953E9C2C1E6FFE4B00EA2234 /* FieldsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953E9C251E6FFE4B00EA2234 /* FieldsView.swift */; };
+		953E9C2D1E6FFE4B00EA2234 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953E9C261E6FFE4B00EA2234 /* HeaderView.swift */; };
+		953E9C2E1E6FFE4B00EA2234 /* PayButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953E9C271E6FFE4B00EA2234 /* PayButtonView.swift */; };
+		953E9C2F1E6FFE4B00EA2234 /* SumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953E9C281E6FFE4B00EA2234 /* SumView.swift */; };
+		953E9C301E6FFE4B00EA2234 /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953E9C2A1E6FFE4B00EA2234 /* TriangleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		953E9BFD1E6FF2BE00EA2234 /* Payments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Payments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		953E9C001E6FF2BE00EA2234 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		953E9C021E6FF2BE00EA2234 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		953E9C051E6FF2BE00EA2234 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		953E9C071E6FF2BE00EA2234 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		953E9C0A1E6FF2BE00EA2234 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		953E9C0C1E6FF2BE00EA2234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		953E9C121E6FF31C00EA2234 /* PayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
+		953E9C241E6FFE4B00EA2234 /* AccountSwitcherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountSwitcherView.swift; sourceTree = "<group>"; };
+		953E9C251E6FFE4B00EA2234 /* FieldsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldsView.swift; sourceTree = "<group>"; };
+		953E9C261E6FFE4B00EA2234 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		953E9C271E6FFE4B00EA2234 /* PayButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayButtonView.swift; sourceTree = "<group>"; };
+		953E9C281E6FFE4B00EA2234 /* SumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SumView.swift; sourceTree = "<group>"; };
+		953E9C2A1E6FFE4B00EA2234 /* TriangleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,44 @@
 		953E9BFF1E6FF2BE00EA2234 /* Payments */ = {
 			isa = PBXGroup;
 			children = (
-				953E9C001E6FF2BE00EA2234 /* AppDelegate.swift */,
-				953E9C021E6FF2BE00EA2234 /* ViewController.swift */,
 				953E9C041E6FF2BE00EA2234 /* Main.storyboard */,
+				953E9C121E6FF31C00EA2234 /* PayViewController.swift */,
+				953E9C231E6FFE4B00EA2234 /* Components */,
+				953E9C291E6FFE4B00EA2234 /* Views */,
+				953E9C311E6FFE6000EA2234 /* Resources */,
+			);
+			path = Payments;
+			sourceTree = "<group>";
+		};
+		953E9C231E6FFE4B00EA2234 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				953E9C241E6FFE4B00EA2234 /* AccountSwitcherView.swift */,
+				953E9C251E6FFE4B00EA2234 /* FieldsView.swift */,
+				953E9C261E6FFE4B00EA2234 /* HeaderView.swift */,
+				953E9C271E6FFE4B00EA2234 /* PayButtonView.swift */,
+				953E9C281E6FFE4B00EA2234 /* SumView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		953E9C291E6FFE4B00EA2234 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				953E9C2A1E6FFE4B00EA2234 /* TriangleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		953E9C311E6FFE6000EA2234 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				953E9C001E6FF2BE00EA2234 /* AppDelegate.swift */,
 				953E9C071E6FF2BE00EA2234 /* Assets.xcassets */,
 				953E9C091E6FF2BE00EA2234 /* LaunchScreen.storyboard */,
 				953E9C0C1E6FF2BE00EA2234 /* Info.plist */,
 			);
-			path = Payments;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				953E9C031E6FF2BE00EA2234 /* ViewController.swift in Sources */,
+				953E9C2D1E6FFE4B00EA2234 /* HeaderView.swift in Sources */,
+				953E9C131E6FF31C00EA2234 /* PayViewController.swift in Sources */,
+				953E9C2C1E6FFE4B00EA2234 /* FieldsView.swift in Sources */,
+				953E9C2E1E6FFE4B00EA2234 /* PayButtonView.swift in Sources */,
+				953E9C2F1E6FFE4B00EA2234 /* SumView.swift in Sources */,
 				953E9C011E6FF2BE00EA2234 /* AppDelegate.swift in Sources */,
+				953E9C301E6FFE4B00EA2234 /* TriangleView.swift in Sources */,
+				953E9C2B1E6FFE4B00EA2234 /* AccountSwitcherView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
