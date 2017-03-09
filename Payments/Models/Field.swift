@@ -13,3 +13,12 @@ struct Field {
   let name: String
   let regexp: String?
 }
+
+extension Field: Hashable {
+  var hashValue: Int {
+    return identifier.hashValue
+  }
+  public static func ==(lhs: Field, rhs: Field) -> Bool {
+    return lhs.identifier == rhs.identifier
+  }
+}

@@ -19,4 +19,8 @@ class ServiceLocator {
     return FakeAccountService()
   }
   
+  func modulesFactory() -> IModulesFactory {
+    return ModulesFactory()
+  }
+  
 }

@@ -10,19 +10,19 @@ import UIKit
 
 class PayViewController: UIViewController {
   
-  //
   let providerId = "galchonok"
   
   // Dependencies
   private let providerService = ServiceLocator.shared.providerService()
   private let accountService = ServiceLocator.shared.accountService()
+  private let modulesFactory = ServiceLocator.shared.modulesFactory()
   
-  // Outlets
-  @IBOutlet weak var accountSwitcherView: AccountSwitcherView!
-  @IBOutlet weak var headerView: HeaderView!
-  @IBOutlet weak var fieldsView: FieldsView!
-  @IBOutlet weak var sumView: SumView!
-  @IBOutlet weak var payButtonView: PayButtonView!
+  // Modules
+  private lazy var accountSwitcher: IAccountSwitcher = self.modulesFactory.createAccountSwitcher(parent: self)
+  private lazy var headerModule: IHeaderModule = self.modulesFactory.createHeaderModule(parent: self)
+  private lazy var fieldsModule: IFieldsModule = self.modulesFactory.createFieldsModule(parent: self)
+  private lazy var sumModule: ISumModule = self.modulesFactory.createSumModule(parent: self)
+  private lazy var payButtonModule: IPayButtonModule = self.modulesFactory.createPayButtonModule(parent: self)
 
   // View Controller
   override func viewDidLoad() {
@@ -38,19 +38,12 @@ class PayViewController: UIViewController {
     }
     let accounts = accountService.accounts()
     setup(with: provider, accounts: accounts)
-    
   }
   
   private func setup(with provider: Provider, accounts: [Account]) {
-    
-    accountSwitcherView.setup(with: accounts)
-    
-    headerView.titleLabel.text = provider.title
-    headerView.subtitleLabel.text = provider.subtitle
-    headerView.imageView.image = provider.image
-    
-    fieldsView.setup(with: provider.fields)
-    
+    accountSwitcher.setup(with: accounts)
+    headerModule.setup(with: provider)
+    fieldsModule.setup(with: provider.fields)
   }
 
 }
